@@ -33,7 +33,6 @@ RegimeTributario
 TipoCobranca
 DadosBancarios (Banco, Agencia, Tipo de Conta)
 Observacao
-=================================================
 NomeContatoEmpresa
 CPFContatoEmpresa
 TelefoneContatoEmpresa

@@ -32,6 +32,7 @@
             cadastroToolStripMenuItem = new ToolStripMenuItem();
             clientesToolStripMenuItem = new ToolStripMenuItem();
             empresasToolStripMenuItem = new ToolStripMenuItem();
+            produtosToolStripMenuItem = new ToolStripMenuItem();
             sairToolStripMenuItem = new ToolStripMenuItem();
             relatóriosToolStripMenuItem = new ToolStripMenuItem();
             clientesToolStripMenuItem1 = new ToolStripMenuItem();
@@ -53,7 +54,7 @@
             // 
             // cadastroToolStripMenuItem
             // 
-            cadastroToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { clientesToolStripMenuItem, empresasToolStripMenuItem, sairToolStripMenuItem });
+            cadastroToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { clientesToolStripMenuItem, empresasToolStripMenuItem, produtosToolStripMenuItem, sairToolStripMenuItem });
             cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             cadastroToolStripMenuItem.Size = new Size(71, 20);
             cadastroToolStripMenuItem.Text = "&Cadastros";
@@ -61,19 +62,28 @@
             // clientesToolStripMenuItem
             // 
             clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            clientesToolStripMenuItem.Size = new Size(124, 22);
+            clientesToolStripMenuItem.Size = new Size(180, 22);
             clientesToolStripMenuItem.Text = "C&lientes";
+            clientesToolStripMenuItem.Click += clientesToolStripMenuItem_Click;
             // 
             // empresasToolStripMenuItem
             // 
             empresasToolStripMenuItem.Name = "empresasToolStripMenuItem";
-            empresasToolStripMenuItem.Size = new Size(124, 22);
+            empresasToolStripMenuItem.Size = new Size(180, 22);
             empresasToolStripMenuItem.Text = "&Empresas";
+            empresasToolStripMenuItem.Click += empresasToolStripMenuItem_Click;
+            // 
+            // produtosToolStripMenuItem
+            // 
+            produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
+            produtosToolStripMenuItem.Size = new Size(180, 22);
+            produtosToolStripMenuItem.Text = "&Produtos";
+            produtosToolStripMenuItem.Click += produtosToolStripMenuItem_Click;
             // 
             // sairToolStripMenuItem
             // 
             sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            sairToolStripMenuItem.Size = new Size(124, 22);
+            sairToolStripMenuItem.Size = new Size(180, 22);
             sairToolStripMenuItem.Text = "&Sair";
             // 
             // relatóriosToolStripMenuItem
@@ -86,13 +96,13 @@
             // clientesToolStripMenuItem1
             // 
             clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
-            clientesToolStripMenuItem1.Size = new Size(180, 22);
+            clientesToolStripMenuItem1.Size = new Size(124, 22);
             clientesToolStripMenuItem1.Text = "Clientes";
             // 
             // eMToolStripMenuItem
             // 
             eMToolStripMenuItem.Name = "eMToolStripMenuItem";
-            eMToolStripMenuItem.Size = new Size(180, 22);
+            eMToolStripMenuItem.Size = new Size(124, 22);
             eMToolStripMenuItem.Text = "&Empresas";
             // 
             // toolStripMenuItem1
@@ -111,8 +121,9 @@
             // sobreToolStripMenuItem
             // 
             sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            sobreToolStripMenuItem.Size = new Size(180, 22);
+            sobreToolStripMenuItem.Size = new Size(104, 22);
             sobreToolStripMenuItem.Text = "&Sobre";
+            sobreToolStripMenuItem.Click += sobreToolStripMenuItem_Click;
             // 
             // FrmPrincipal
             // 
@@ -120,6 +131,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(menuStrip1);
+            IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
             Name = "FrmPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
@@ -136,12 +148,13 @@
         private ToolStripMenuItem cadastroToolStripMenuItem;
         private ToolStripMenuItem clientesToolStripMenuItem;
         private ToolStripMenuItem empresasToolStripMenuItem;
-        private ToolStripMenuItem sairToolStripMenuItem;
         private ToolStripMenuItem relatóriosToolStripMenuItem;
         private ToolStripMenuItem clientesToolStripMenuItem1;
         private ToolStripMenuItem eMToolStripMenuItem;
         private ToolStripMenuItem toolStripMenuItem1;
         private ToolStripMenuItem ajudaToolStripMenuItem;
         private ToolStripMenuItem sobreToolStripMenuItem;
+        private ToolStripMenuItem produtosToolStripMenuItem;
+        private ToolStripMenuItem sairToolStripMenuItem;
     }
 }
