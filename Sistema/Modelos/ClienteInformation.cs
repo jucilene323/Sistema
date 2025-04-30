@@ -13,6 +13,7 @@ namespace Sistema.Modelos
         private string Cliente { get; set; }
         private  string CPF { get; set; }
         private string RG { get; set; }
+        private string EmailCliente { get; set; }
         private string EstadoCivil { get; set; }
         private DateTime DatadeNascimento { get; set; }
         private string Endereco { get; set; }
